@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text Sentiment Analyzer</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <script src="https://unpkg.com/natural"></script>
+    <!-- <script src="path/to/natural.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <p id="output"></p>
+    <div style="min-width: 50%; padding: 32px;" class=" m-10 rounded-3xl bg1 relative">
+        <h1 class="font-extrabold text-3xl mb-10 text-center gradient-text1">SENTIMENT ANALYSIS</h1>
+        <form id="myForm">
+            <label for="input" class="text-2xl gradient-text2">Enter text to analyze:</label>
+            <input id="input" type="text" style="resize: vertical;">
+            <div class="text-center mt-5"><button class="w-32" type="button" onclick="analyze()">Analyze</button></div>
+
+            <div id="result"></div>
+            <div id="error" class="error"></div>
+        </form>
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 pt-20 pb-5 mx-auto">
+
+                <div class="flex flex-wrap -m-4 justify-center">
+
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-100 p-6 rounded-3xl flex flex-col items-center text-center">
+                            <img class="h-40 rounded w-1/4 h-1/4 mx-auto object-center mb-6" src="/512.gif"
+                                alt="content">
+                            <h3 class="tracking-widest text-indigo-500 text-xl font-bold title-font">POSITIVE</h3>
+
+                            <p class="leading-relaxed text-base">Score: <span id="s1">0</span></p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-100 p-6 rounded-3xl flex flex-col items-center text-center">
+                            <img class="h-40 rounded w-1/4 h-1/4 mx-auto object-center mb-6"
+                                src="/zipper_mouth_face.gif" alt="content">
+                            <h3 class="tracking-widest text-indigo-500 text-xl font-bold title-font">NEUTRAL</h3>
+
+                            <p class="leading-relaxed text-base">Score: <span id="s2">0</span></p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-100 p-6 rounded-3xl flex flex-col items-center text-center">
+                            <img class="h-40 rounded w-1/4 h-1/4 mx-auto object-center mb-6" src="/pouting_face.gif"
+                                alt="content">
+                            <h3 class="tracking-widest text-indigo-500 text-xl font-bold title-font">NEGATIVE</h3>
+
+                            <p class="leading-relaxed text-base">Score: <span id="s3">0</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-10"><button class="px-5" type="button" onclick="refresh()">Refresh
+                        score</button><button class="px-5 ml-5 " type="button" onclick="refresh()">Exlamation count:
+                        <span id="s4">0</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    <!-- <script src="node.js"></script> -->
+
+    </script>
+
+
+
+
+</body>
+
+</html>

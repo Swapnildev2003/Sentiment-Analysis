@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yuji+Mai&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 23px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.bg1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/pawel-czerwinski-MlotNtKgKjo-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    border-radius: 23px;
+}
+
+.gradient-text1 {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(184, 178, 178));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Yuji Mai', serif;
+
+}
+
+.gradient-text2 {
+    background: linear-gradient(to left, rgb(217, 131, 223), rgb(66, 20, 182));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Yuji Mai', serif;
+
+}
