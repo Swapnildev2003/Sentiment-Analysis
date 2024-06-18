@@ -23,5 +23,9 @@ This is a sentiment analysis web application that determines the sentiment (posi
 ### Prerequisites
 
 - Node.js
-
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/Swapnildev2003/Ecommerce-ShopHUb-.git
+   cd Ecommerce-ShopHUb
+   ```
 
